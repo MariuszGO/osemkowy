@@ -1,0 +1,32 @@
+﻿<Window x:Class="osemkowy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:osemkowy"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="4*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="liczba" Grid.Column="1" HorizontalAlignment="Left" Width="100px" Margin="183,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" FontSize="16"/>
+        <Label Grid.Column="1" Content="Podaj liczbę dziesiętną" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="1" FontSize="16"/>
+        <Button Grid.Column="1" Content="Oblicz" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="2" VerticalAlignment="Center" FontSize="16" Click="Button_Click"/>
+        <Label Grid.Column="1" x:Name="wynik" Content="" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="3" VerticalAlignment="Center" FontSize="16"/>
+
+
+
+
+
+    </Grid>
+</Window>
